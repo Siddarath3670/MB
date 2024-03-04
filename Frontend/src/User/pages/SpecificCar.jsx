@@ -84,6 +84,7 @@ const SpecificCar = () => {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     const fetchCar = async () => {
       try {
         const response = await axios.get(`${url}/${id}`);
